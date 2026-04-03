@@ -1,1 +1,20 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Sniper Bot</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>SNIPER BOT</h1>
+    <p>Vítej na naší stránce</p>
+
+    <button>Začít</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
