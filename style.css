@@ -111,7 +111,7 @@ body {
     animation: smokeMove 40s linear infinite;
 
     filter: blur(60px);
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 /* PLYNULÝ POHYB */
