@@ -8,7 +8,13 @@
 
 <body>
 
-    <!-- KOUŘ (MRÁČKY) -->
+    <!-- 🇨🇿 🇬🇧 LANGUAGE SWITCH -->
+    <div class="lang-switch">
+        <img src="cz.png" class="flag" onclick="setLang('cz')">
+        <img src="uk.png" class="flag" onclick="setLang('en')">
+    </div>
+
+    <!-- 🔥 KOUŘ (MRÁČKY) -->
     <div class="smoke">
         <span></span>
         <span></span>
@@ -17,20 +23,22 @@
         <span></span>
     </div>
 
-    <!-- OBSAH -->
+    <!-- 🔥 OBSAH -->
     <div class="container">
 
-        <p class="subtitle">Vítej na naší stránce</p>
+        <p class="subtitle" id="title">Vítej na naší stránce</p>
 
         <img src="logo.png" class="logo">
 
         <div class="buttons">
-            <button class="shadow__btn blue">Start</button>
-            <button class="shadow__btn red">Příběh</button>
-            <button class="shadow__btn green">Kontakt</button>
+            <button class="shadow__btn blue" id="btn1">Start</button>
+            <button class="shadow__btn red" id="btn2">Příběh</button>
+            <button class="shadow__btn green" id="btn3">Kontakt</button>
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
