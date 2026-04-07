@@ -88,7 +88,10 @@ body {
                 0 0 100px rgb(0,255,120);
 }
 
-/* SMOKE WRAPPER */
+/* ========================= */
+/* 🔥 REAL SMOKE (MRÁČKY) */
+/* ========================= */
+
 .smoke {
     position: fixed;
     top: 0;
@@ -100,46 +103,59 @@ body {
     overflow: hidden;
 }
 
-/* 1. KOUŘ */
-.smoke::before,
-.smoke::after {
-    content: "";
+/* každý mrak */
+.smoke span {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    border-radius: 50%;
+    background: rgba(220,220,220,0.35);
+    filter: blur(40px);
+    opacity: 0;
 
-    background: radial-gradient(circle, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.08) 40%, transparent 70%);
-    filter: blur(60px);
-
-    animation: smokeMove 18s linear infinite;
+    animation: moveSmoke linear infinite;
 }
 
-/* velkej mrak */
-.smoke::before {
-    top: 30%;
-    left: -500px;
+/* různý velikosti + pozice */
+.smoke span:nth-child(1) {
+    width: 200px; height: 200px;
+    top: 20%; left: -200px;
+    animation-duration: 18s;
 }
 
-/* menší mrak */
-.smoke::after {
-    top: 60%;
-    left: -600px;
-    width: 300px;
-    height: 300px;
+.smoke span:nth-child(2) {
+    width: 300px; height: 300px;
+    top: 50%; left: -300px;
     animation-duration: 25s;
 }
 
-/* pohyb */
-@keyframes smokeMove {
+.smoke span:nth-child(3) {
+    width: 150px; height: 150px;
+    top: 70%; left: -150px;
+    animation-duration: 20s;
+}
+
+.smoke span:nth-child(4) {
+    width: 250px; height: 250px;
+    top: 35%; left: -250px;
+    animation-duration: 22s;
+}
+
+.smoke span:nth-child(5) {
+    width: 180px; height: 180px;
+    top: 10%; left: -180px;
+    animation-duration: 19s;
+}
+
+/* animace */
+@keyframes moveSmoke {
     0% {
         transform: translateX(0);
         opacity: 0;
     }
     10% {
-        opacity: 1;
+        opacity: 0.7;
     }
     90% {
-        opacity: 1;
+        opacity: 0.7;
     }
     100% {
         transform: translateX(120vw);
