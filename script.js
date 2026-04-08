@@ -10,7 +10,7 @@ const translations = {
     en: {
         title: "Welcome to our page",
         btn1: "Start",
-        btn2: "About us",
+        btn2: "About Us",
         btn3: "Contact",
         back: "Back",
         startText: "Something will be here soon..."
@@ -27,7 +27,13 @@ function setLang(lang) {
     });
 }
 
-// 🚀 přechody
+// 🔥 AUTOMATICKÉ NAČTENÍ JAZYKA NA KAŽDÉ STRÁNCE
+window.onload = () => {
+    const savedLang = localStorage.getItem("lang") || "cz";
+    setLang(savedLang);
+};
+
+// 🚀 přechody mezi stránkami
 function goStart() {
     window.location.href = "start.html";
 }
