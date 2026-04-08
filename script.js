@@ -2,7 +2,7 @@ const translations = {
     cz: {
         title: "Vítej na naší stránce",
         btn1: "Start",
-        btn2: "Příběh",
+        btn2: "O nás",
         btn3: "Kontakt",
         back: "Zpět",
         startText: "Brzy tu něco bude..."
@@ -10,7 +10,7 @@ const translations = {
     en: {
         title: "Welcome to our page",
         btn1: "Start",
-        btn2: "Story",
+        btn2: "About us",
         btn3: "Contact",
         back: "Back",
         startText: "Something will be here soon..."
