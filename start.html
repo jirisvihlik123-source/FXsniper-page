@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>FXcompany</title>
+
+    <link rel="icon" href="favicon.png?v=6">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 🇨🇿 🇬🇧 -->
+    <div class="lang-switch">
+        <img src="cz.png" class="flag" onclick="setLang('cz')">
+        <img src="uk.png" class="flag" onclick="setLang('en')">
+    </div>
+
+    <!-- 🔥 BACK BUTTON -->
+    <button class="shadow__btn blue back-btn" onclick="goBack()" data-lang="back">
+        Zpět
+    </button>
+
+    <!-- 🔥 SMOKE -->
+    <div class="smoke">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- OBSAH -->
+    <div class="container">
+        <p class="subtitle" data-lang="startText">
+            Tady bude obsah...
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
