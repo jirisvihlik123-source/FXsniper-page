@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>FXcompany</title>
 
-    <link rel="icon" href="favicon.png?v=6">
+    <link rel="icon" href="favicon.png?v=7">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- 🇨🇿 🇬🇧 -->
+    <!-- 🇨🇿 🇬🇧 LANGUAGE -->
     <div class="lang-switch">
         <img src="cz.png" class="flag" onclick="setLang('cz')">
         <img src="uk.png" class="flag" onclick="setLang('en')">
@@ -23,15 +23,31 @@
 
     <!-- 🔥 SMOKE -->
     <div class="smoke">
-        <span></span><span></span><span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
-    <!-- OBSAH -->
+    <!-- 🔥 CONTENT -->
     <div class="container">
         <p class="subtitle" data-lang="startText">
-            Tady bude obsah...
+            Brzy tu něco bude...
         </p>
     </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- 🔥 FORCE LANGUAGE LOAD -->
+    <script>
+        const savedLang = localStorage.getItem("lang") || "cz";
+        setLang(savedLang);
+    </script>
+
+</body>
+</html>
 
     <script src="script.js"></script>
 
