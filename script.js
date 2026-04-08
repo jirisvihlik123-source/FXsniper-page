@@ -5,7 +5,8 @@ const translations = {
         btn2: "O nás",
         btn3: "Kontakt",
         back: "Zpět",
-        startText: "Brzy tu něco bude..."
+        startText: "Brzy tu něco bude...",
+        aboutText: "Brzy tu něco bude..."
     },
     en: {
         title: "Welcome to our page",
@@ -13,7 +14,8 @@ const translations = {
         btn2: "About Us",
         btn3: "Contact",
         back: "Back",
-        startText: "Something will be here soon..."
+        startText: "Something will be here soon...",
+        aboutText: "Something will be here soon..."
     }
 };
 
@@ -27,15 +29,19 @@ function setLang(lang) {
     });
 }
 
-// 🔥 AUTOMATICKÉ NAČTENÍ JAZYKA NA KAŽDÉ STRÁNCE
+// 🔥 automatické načtení jazyka na každé stránce
 window.onload = () => {
     const savedLang = localStorage.getItem("lang") || "cz";
     setLang(savedLang);
 };
 
-// 🚀 přechody mezi stránkami
+// 🚀 navigace mezi stránkami
 function goStart() {
     window.location.href = "start.html";
+}
+
+function goAbout() {
+    window.location.href = "pribeh.html";
 }
 
 function goBack() {
