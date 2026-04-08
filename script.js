@@ -17,7 +17,7 @@ const translations = {
     }
 };
 
-// 🔄 ZMĚNA JAZYKA + ULOŽENÍ
+// 🔄 změna jazyka + uložení
 function setLang(lang) {
     localStorage.setItem("lang", lang);
 
@@ -27,13 +27,7 @@ function setLang(lang) {
     });
 }
 
-// 🔥 AUTO LOAD JAZYKA
-window.onload = () => {
-    const savedLang = localStorage.getItem("lang") || "cz";
-    setLang(savedLang);
-};
-
-// 🚀 PŘECHODY
+// 🚀 přechody
 function goStart() {
     window.location.href = "start.html";
 }
