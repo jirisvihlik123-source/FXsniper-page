@@ -49,3 +49,7 @@ function goTelegram() {
 }
     window.location.href = "index.html";
 }
+
+function goAbout() {
+    window.location.href = "about.html";
+}
