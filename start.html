@@ -2,54 +2,31 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>FXcompany</title>
+    <title>Start</title>
 
-    <link rel="icon" href="favicon.png?v=7">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- 🇨🇿 🇬🇧 LANGUAGE -->
     <div class="lang-switch">
         <img src="cz.png" class="flag" onclick="setLang('cz')">
         <img src="uk.png" class="flag" onclick="setLang('en')">
     </div>
 
-    <!-- 🔥 BACK BUTTON -->
-    <button class="shadow__btn blue back-btn" onclick="goBack()" data-lang="back">
-        Zpět
-    </button>
-
-    <!-- 🔥 SMOKE -->
-    <div class="smoke">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="telegram-wrapper">
+        <a href="https://t.me/+KAlz7OTd-_kyNzk0" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
+        </a>
+        <span class="telegram-text" data-lang="join">PŘIDEJ SE</span>
     </div>
 
-    <!-- 🔥 CONTENT -->
     <div class="container">
-        <p class="subtitle" data-lang="startText">
-            Brzy tu něco bude...
-        </p>
+        <p class="subtitle" data-lang="startText">Brzy tu něco bude...</p>
+        <button class="shadow__btn blue" onclick="goBack()" data-lang="back">Zpět</button>
     </div>
 
-    <!-- SCRIPT -->
     <script src="script.js"></script>
-
-    <!-- 🔥 FORCE LANGUAGE LOAD -->
-    <script>
-        const savedLang = localStorage.getItem("lang") || "cz";
-        setLang(savedLang);
-    </script>
-
-</body>
-</html>
-
-    <script src="script.js"></script>
-
 </body>
 </html>
