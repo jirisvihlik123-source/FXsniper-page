@@ -252,7 +252,9 @@ body {
     font-size: 14px;
 
     opacity: 0;
-    transform: translateX(-10px);
+    transform: translateX(0);
+
+    margin-left: 8px;   /* 🔥 důležité */
 
     transition: 0.3s;
 }
@@ -264,8 +266,9 @@ body {
 }
 
 /* puls ikonky */
-.telegram-wrapper:hover .telegram-icon {
-    animation: pulse 1s infinite;
+.telegram-wrapper:hover .telegram-text {
+    opacity: 1;
+    transform: translateX(10px); /* místo 0 */
 }
 
 /* animace */
