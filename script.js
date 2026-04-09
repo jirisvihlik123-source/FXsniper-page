@@ -44,6 +44,8 @@ function goAbout() {
     window.location.href = "pribeh.html";
 }
 
-function goBack() {
+function goTelegram() {
+    window.open("https://t.me/+KAlz7OTd-_kyNzk0", "_blank");
+}
     window.location.href = "index.html";
 }
