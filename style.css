@@ -230,3 +230,47 @@ body {
     transform: scale(1.2);
     filter: drop-shadow(0 0 10px #00aaff);
 }
+
+/* ========================= */
+/* 📩 TELEGRAM TEXT + PULS */
+/* ========================= */
+
+.telegram-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 6;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.telegram-text {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+
+    opacity: 0;
+    transform: translateX(-10px);
+
+    transition: 0.3s;
+}
+
+/* zobrazí text při hover */
+.telegram-wrapper:hover .telegram-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* puls ikonky */
+.telegram-wrapper:hover .telegram-icon {
+    animation: pulse 1s infinite;
+}
+
+/* animace */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
