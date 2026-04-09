@@ -1,8 +1,15 @@
-/* CUSTOM FONT */
+/* ========================= */
+/* 🔤 FONT */
+/* ========================= */
+
 @font-face {
     font-family: "GreaterTheory";
     src: url("fonts/GreaterTheory.ttf") format("truetype");
 }
+
+/* ========================= */
+/* 🌑 BODY */
+/* ========================= */
 
 body {
     margin: 0;
@@ -12,7 +19,10 @@ body {
     overflow: hidden;
 }
 
-/* CENTER */
+/* ========================= */
+/* 📦 CENTER CONTENT */
+/* ========================= */
+
 .container {
     position: relative;
     z-index: 2;
@@ -25,27 +35,37 @@ body {
     align-items: center;
 }
 
-/* TEXT */
+/* ========================= */
+/* 📝 TEXT */
+/* ========================= */
+
 .subtitle {
     font-family: "Oswald", sans-serif;
     font-size: 32px;
     letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-/* LOGO */
+/* ========================= */
+/* 🖼 LOGO */
+/* ========================= */
+
 .logo {
     width: 420px;
     max-width: 85%;
     margin-bottom: 40px;
 }
 
-/* BUTTONS */
+/* ========================= */
+/* 🔘 BUTTONS */
+/* ========================= */
+
 .buttons {
     display: flex;
     gap: 20px;
 }
 
-/* BUTTON STYLE */
+/* BASE BUTTON */
 .shadow__btn {
     padding: 12px 25px;
     border: none;
@@ -108,6 +128,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+
     z-index: 1;
     pointer-events: none;
     overflow: hidden;
@@ -116,8 +137,8 @@ body {
 .smoke span {
     position: absolute;
     border-radius: 50%;
-    background: rgba(220,220,220,0.35);
-    filter: blur(40px);
+    background: rgba(200,200,200,0.4);
+    filter: blur(50px);
     opacity: 0;
 
     animation: moveSmoke linear infinite;
@@ -125,29 +146,25 @@ body {
 
 /* různé mraky */
 .smoke span:nth-child(1) {
-    width: 200px; height: 200px;
-    top: 20%; left: -200px;
+    width: 220px; height: 220px;
+    top: 20%; left: -220px;
     animation-duration: 18s;
 }
-
 .smoke span:nth-child(2) {
     width: 300px; height: 300px;
     top: 50%; left: -300px;
     animation-duration: 25s;
 }
-
 .smoke span:nth-child(3) {
     width: 150px; height: 150px;
     top: 70%; left: -150px;
     animation-duration: 20s;
 }
-
 .smoke span:nth-child(4) {
     width: 250px; height: 250px;
     top: 35%; left: -250px;
     animation-duration: 22s;
 }
-
 .smoke span:nth-child(5) {
     width: 180px; height: 180px;
     top: 10%; left: -180px;
@@ -180,7 +197,7 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 3;
+    z-index: 5;
 
     display: flex;
     gap: 10px;
@@ -199,40 +216,8 @@ body {
     box-shadow: 0 0 10px white;
 }
 
-/* BACK BUTTON */
-.back-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 3;
-}
-
 /* ========================= */
-/* 📩 TELEGRAM ICON */
-/* ========================= */
-
-.telegram-icon {
-    position: fixed;
-    top: 25px;
-    left: 25px;
-
-    width: 45px;       /* KLÍČOVÝ */
-    height: 45px;      /* KLÍČOVÝ */
-
-    object-fit: contain;
-    cursor: pointer;
-    z-index: 5;
-
-    transition: 0.3s;
-}
-
-.telegram-icon:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 10px #00aaff);
-}
-
-/* ========================= */
-/* 📩 TELEGRAM TEXT + PULS */
+/* 📩 TELEGRAM */
 /* ========================= */
 
 .telegram-wrapper {
@@ -246,29 +231,24 @@ body {
     gap: 10px;
 }
 
-.telegram-text {
-    color: white;
-    font-family: "Oswald", sans-serif;
-    font-size: 14px;
-
-    opacity: 0;
-    transform: translateX(0);
-
-    margin-left: 8px;   /* 🔥 důležité */
-
-    transition: 0.3s;
+.telegram-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
-/* zobrazí text při hover */
-.telegram-wrapper:hover .telegram-text {
-    opacity: 1;
-    transform: translateX(0);
+/* TEXT vedle ikonky */
+.telegram-text {
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    color: white;
+
+    margin-left: 5px;
 }
 
 /* puls ikonky */
-.telegram-wrapper:hover .telegram-text {
-    opacity: 1;
-    transform: translateX(10px); /* místo 0 */
+.telegram-wrapper:hover .telegram-icon {
+    animation: pulse 1s infinite;
 }
 
 /* animace */
