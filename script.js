@@ -47,6 +47,14 @@ function goAbout() {
 function goTelegram() {
     window.open("https://t.me/+KAlz7OTd-_kyNzk0", "_blank");
 }
+
+function goAbout() {
+    window.location.href = "pribeh.html";
+}
+
+function goTelegram() {
+    window.open("https://t.me/+KAlz7OTd-_kyNzk0", "_blank");
+}
     window.location.href = "index.html";
 }
 
