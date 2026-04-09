@@ -1,3 +1,9 @@
+/* CUSTOM FONT */
+@font-face {
+    font-family: "GreaterTheory";
+    src: url("fonts/GreaterTheory.ttf") format("truetype");
+}
+
 body {
     margin: 0;
     background: black;
