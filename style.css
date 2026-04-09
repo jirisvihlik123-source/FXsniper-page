@@ -206,3 +206,27 @@ body {
     left: 20px;
     z-index: 3;
 }
+
+/* ========================= */
+/* 📩 TELEGRAM ICON */
+/* ========================= */
+
+.telegram-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 45px;       /* KLÍČOVÝ */
+    height: 45px;      /* KLÍČOVÝ */
+
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 5;
+
+    transition: 0.3s;
+}
+
+.telegram-icon:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #00aaff);
+}
