@@ -19,6 +19,11 @@ body {
     overflow: hidden;
 }
 
+/* scroll stránky (start) */
+.scroll-page {
+    overflow-y: auto;
+}
+
 /* ========================= */
 /* 📦 CENTER CONTENT */
 /* ========================= */
@@ -65,7 +70,6 @@ body {
     gap: 20px;
 }
 
-/* BASE BUTTON */
 .shadow__btn {
     padding: 12px 25px;
     border: none;
@@ -105,19 +109,6 @@ body {
                 0 0 100px rgb(255,0,80);
 }
 
-/* GREEN */
-.green {
-    background: rgb(0,255,120);
-    box-shadow: 0 0 20px rgb(0,255,120);
-}
-.green:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px rgb(0,255,120),
-                0 0 25px rgb(0,255,120),
-                0 0 50px rgb(0,255,120),
-                0 0 100px rgb(0,255,120);
-}
-
 /* ========================= */
 /* 🔥 SMOKE (MRÁČKY) */
 /* ========================= */
@@ -144,7 +135,6 @@ body {
     animation: moveSmoke linear infinite;
 }
 
-/* různé mraky */
 .smoke span:nth-child(1) {
     width: 220px; height: 220px;
     top: 20%; left: -220px;
@@ -171,22 +161,11 @@ body {
     animation-duration: 19s;
 }
 
-/* animace */
 @keyframes moveSmoke {
-    0% {
-        transform: translateX(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.7;
-    }
-    90% {
-        opacity: 0.7;
-    }
-    100% {
-        transform: translateX(120vw);
-        opacity: 0;
-    }
+    0% { transform: translateX(0); opacity: 0; }
+    10% { opacity: 0.7; }
+    90% { opacity: 0.7; }
+    100% { transform: translateX(120vw); opacity: 0; }
 }
 
 /* ========================= */
@@ -237,28 +216,53 @@ body {
     cursor: pointer;
 }
 
-/* TEXT vedle ikonky */
+/* text vedle ikonky */
 .telegram-text {
     font-family: "Oswald", sans-serif;
     font-size: 14px;
     color: white;
-
-    margin-left: 5px;
 }
 
-/* puls ikonky */
+/* puls efekt */
 .telegram-wrapper:hover .telegram-icon {
     animation: pulse 1s infinite;
 }
 
-/* SCROLL PAGE */
-.scroll-page {
-    overflow-y: auto;
-}
-
-/* animace */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
+}
+
+/* ========================= */
+/* 📜 SCROLL PAGE */
+/* ========================= */
+
+.scroll-container {
+    width: 100%;
+}
+
+.section {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.text {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    max-width: 600px;
+    margin-top: 20px;
 }
