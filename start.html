@@ -8,23 +8,83 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="scroll-page">
 
+    <!-- 🇨🇿 🇬🇧 -->
     <div class="lang-switch">
         <img src="cz.png" class="flag" onclick="setLang('cz')">
         <img src="uk.png" class="flag" onclick="setLang('en')">
     </div>
 
-    <div class="telegram-wrapper">
-        <a href="https://t.me/+KAlz7OTd-_kyNzk0" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
-        </a>
+    <!-- TELEGRAM ICON + TEXT -->
+    <div class="telegram-wrapper" onclick="goTelegram()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
         <span class="telegram-text" data-lang="join">PŘIDEJ SE</span>
     </div>
 
-    <div class="container">
-        <p class="subtitle" data-lang="startText">Brzy tu něco bude...</p>
-        <button class="shadow__btn blue" onclick="goBack()" data-lang="back">Zpět</button>
+    <!-- SMOKE -->
+    <div class="smoke">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="scroll-container">
+
+        <section class="section">
+            <h1 class="title">FXSNIPER</h1>
+            <p class="text">
+                FXSniper je automatický software pro Forex trading, který analyzuje trh v reálném čase
+                a sleduje více měnových párů současně.
+            </p>
+        </section>
+
+        <section class="section">
+            <h1 class="title">PRECIZNÍ ANALÝZA</h1>
+            <p class="text">
+                Pomocí pokročilé analýzy vyhledává pouze ty nejkvalitnější obchodní příležitosti
+                a posílá přesné signály pro vstup do obchodu.
+            </p>
+        </section>
+
+        <section class="section">
+            <h1 class="title">CHYTRÝ SYSTÉM</h1>
+            <p class="text">
+                Reaguje okamžitě na změny trhu a využívá kombinaci price action,
+                support/resistance a statistického vyhodnocení.
+            </p>
+        </section>
+
+        <section class="section">
+            <h1 class="title">RISK MANAGEMENT</h1>
+            <p class="text">
+                Každý signál obsahuje stop-loss a take-profit,
+                čímž snižuje riziko a zvyšuje konzistenci.
+            </p>
+        </section>
+
+        <section class="section">
+            <h1 class="title">JEDNODUCHOST</h1>
+            <p class="text">
+                Nemusíš analyzovat trh.
+                Stačí sledovat signály a obchodovat.
+            </p>
+        </section>
+
+        <!-- 🔥 FINAL SECTION -->
+        <section class="section">
+            <h1 class="title">VSTUP DO FXSNIPER</h1>
+
+            <div class="buttons">
+                <button class="shadow__btn red" onclick="goAbout()" data-lang="btn2">
+                    O nás
+                </button>
+
+                <button class="shadow__btn blue" onclick="goTelegram()">
+                    Kontakt
+                </button>
+            </div>
+        </section>
+
     </div>
 
     <script src="script.js"></script>
