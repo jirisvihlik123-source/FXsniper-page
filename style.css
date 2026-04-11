@@ -68,8 +68,9 @@ body {
 .buttons {
     display: flex;
     gap: 20px;
+    margin-top: 30px;
+    z-index: 3;
 }
-
 .shadow__btn {
     padding: 12px 25px;
     border: none;
@@ -243,15 +244,8 @@ body {
 
 /* sekce */
 .section {
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-    padding: 40px;
+    position: relative;
+    z-index: 3; /* 🔥 tohle je klíč */
 }
 
 /* NADPIS */
