@@ -2,16 +2,15 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>FXsniper</title>
+    <title>Start</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png?v=5">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="scroll-page">
 
-    <!-- LANGUAGE -->
+    <!-- 🇨🇿 🇬🇧 -->
     <div class="lang-switch">
         <img src="cz.png" class="flag" onclick="setLang('cz')">
         <img src="uk.png" class="flag" onclick="setLang('en')">
@@ -30,17 +29,36 @@
         <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <div class="container">
-        <p class="subtitle" data-lang="title">Vítej na naší stránce</p>
-        <img src="logo.png" class="logo">
+    <!-- SCROLL CONTENT -->
+    <div class="scroll-container">
 
-        <div class="buttons">
-            <button class="shadow__btn blue" onclick="goStart()" data-lang="btn1">Start</button>
-            <button class="shadow__btn red" onclick="goAbout()" data-lang="btn2">O nás</button>
-        </div>
+        <section class="section">
+            <h1 class="title">SNIPER BOT</h1>
+            <p class="text">
+                Automatizovaný trading systém zaměřený na přesnost a konzistenci.
+            </p>
+        </section>
+
+        <section class="section">
+            <h1 class="title">PRECISION</h1>
+            <p class="text">
+                Každý trade je filtrován pomocí AI a ADX analýzy.
+            </p>
+        </section>
+
+        <section class="section">
+            <h1 class="title">PERFORMANCE</h1>
+            <p class="text">
+                Sleduj statistiky, winrate a optimalizuj svůj risk management.
+            </p>
+        </section>
+
+        <section class="section">
+            <button class="shadow__btn blue" onclick="goBack()" data-lang="back">Zpět</button>
+        </section>
+
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
 </html>
