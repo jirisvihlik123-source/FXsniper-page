@@ -251,6 +251,11 @@ body {
     animation: pulse 1s infinite;
 }
 
+/* SCROLL PAGE */
+.scroll-page {
+    overflow-y: auto;
+}
+
 /* animace */
 @keyframes pulse {
     0% { transform: scale(1); }
