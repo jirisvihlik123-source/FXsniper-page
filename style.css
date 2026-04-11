@@ -19,7 +19,7 @@ body {
     overflow: hidden;
 }
 
-/* scroll stránky (start) */
+/* scroll stránky */
 .scroll-page {
     overflow-y: auto;
 }
@@ -110,7 +110,7 @@ body {
 }
 
 /* ========================= */
-/* 🔥 SMOKE (MRÁČKY) */
+/* 🔥 SMOKE */
 /* ========================= */
 
 .smoke {
@@ -128,43 +128,43 @@ body {
 .smoke span {
     position: absolute;
     border-radius: 50%;
-    background: rgba(200,200,200,0.4);
-    filter: blur(50px);
+    background: rgba(200,200,200,0.35);
+    filter: blur(60px);
     opacity: 0;
 
     animation: moveSmoke linear infinite;
 }
 
 .smoke span:nth-child(1) {
-    width: 220px; height: 220px;
-    top: 20%; left: -220px;
+    width: 250px; height: 250px;
+    top: 20%; left: -250px;
     animation-duration: 18s;
 }
 .smoke span:nth-child(2) {
-    width: 300px; height: 300px;
-    top: 50%; left: -300px;
+    width: 350px; height: 350px;
+    top: 50%; left: -350px;
     animation-duration: 25s;
 }
 .smoke span:nth-child(3) {
-    width: 150px; height: 150px;
-    top: 70%; left: -150px;
+    width: 180px; height: 180px;
+    top: 70%; left: -180px;
     animation-duration: 20s;
 }
 .smoke span:nth-child(4) {
-    width: 250px; height: 250px;
-    top: 35%; left: -250px;
+    width: 280px; height: 280px;
+    top: 35%; left: -280px;
     animation-duration: 22s;
 }
 .smoke span:nth-child(5) {
-    width: 180px; height: 180px;
-    top: 10%; left: -180px;
+    width: 200px; height: 200px;
+    top: 10%; left: -200px;
     animation-duration: 19s;
 }
 
 @keyframes moveSmoke {
     0% { transform: translateX(0); opacity: 0; }
-    10% { opacity: 0.7; }
-    90% { opacity: 0.7; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.6; }
     100% { transform: translateX(120vw); opacity: 0; }
 }
 
@@ -177,7 +177,6 @@ body {
     top: 20px;
     right: 20px;
     z-index: 5;
-
     display: flex;
     gap: 10px;
 }
@@ -216,21 +215,21 @@ body {
     cursor: pointer;
 }
 
-/* text vedle ikonky */
+/* TEXT */
 .telegram-text {
     font-family: "Oswald", sans-serif;
     font-size: 14px;
     color: white;
 }
 
-/* puls efekt */
+/* puls */
 .telegram-wrapper:hover .telegram-icon {
     animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
     0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
+    50% { transform: scale(1.15); }
     100% { transform: scale(1); }
 }
 
@@ -242,6 +241,7 @@ body {
     width: 100%;
 }
 
+/* sekce */
 .section {
     height: 100vh;
 
@@ -251,13 +251,25 @@ body {
     align-items: center;
 
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
+/* NADPIS */
 .title {
     font-family: "Oswald", sans-serif;
-    font-size: 50px;
-    letter-spacing: 3px;
+    font-size: 56px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+.text {
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+    max-width: 700px;
+
+    line-height: 1.7;
+    opacity: 0.9;
 }
 
 .text {
