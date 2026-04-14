@@ -1,274 +1,167 @@
-/* ========================= */
-/* 🔤 FONT */
-/* ========================= */
-
-@font-face {
-    font-family: "GreaterTheory";
-    src: url("fonts/GreaterTheory.ttf") format("truetype");
-}
-
-/* ========================= */
-/* 🌑 BODY */
-/* ========================= */
-
 body {
     margin: 0;
     background: black;
     color: white;
     font-family: Arial;
-    overflow: hidden;
 }
 
-/* scroll stránky */
+/* SCROLL FIX */
 .scroll-page {
     overflow-y: auto;
 }
 
 /* ========================= */
-/* 📦 CENTER CONTENT */
-/* ========================= */
-
-.container {
-    position: relative;
-    z-index: 2;
-
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ========================= */
-/* 📝 TEXT */
-/* ========================= */
-
-.subtitle {
-    font-family: "Oswald", sans-serif;
-    font-size: 32px;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-/* ========================= */
-/* 🖼 LOGO */
-/* ========================= */
-
-.logo {
-    width: 420px;
-    max-width: 85%;
-    margin-bottom: 40px;
-}
-
-/* ========================= */
-/* 🔘 BUTTONS */
-/* ========================= */
-
-.buttons {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-    z-index: 3;
-}
-.shadow__btn {
-    padding: 12px 25px;
-    border: none;
-    font-size: 16px;
-    color: #fff;
-    border-radius: 8px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* BLUE */
-.blue {
-    background: rgb(0,140,255);
-    box-shadow: 0 0 20px rgb(0,140,255);
-}
-.blue:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px rgb(0,140,255),
-                0 0 25px rgb(0,140,255),
-                0 0 50px rgb(0,140,255),
-                0 0 100px rgb(0,140,255);
-}
-
-/* RED */
-.red {
-    background: rgb(255,0,80);
-    box-shadow: 0 0 20px rgb(255,0,80);
-}
-.red:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px rgb(255,0,80),
-                0 0 25px rgb(255,0,80),
-                0 0 50px rgb(255,0,80),
-                0 0 100px rgb(255,0,80);
-}
-
-/* ========================= */
-/* 🔥 SMOKE */
-/* ========================= */
-
-.smoke {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    z-index: 1;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.smoke span {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(200,200,200,0.35);
-    filter: blur(60px);
-    opacity: 0;
-
-    animation: moveSmoke linear infinite;
-}
-
-.smoke span:nth-child(1) {
-    width: 250px; height: 250px;
-    top: 20%; left: -250px;
-    animation-duration: 18s;
-}
-.smoke span:nth-child(2) {
-    width: 350px; height: 350px;
-    top: 50%; left: -350px;
-    animation-duration: 25s;
-}
-.smoke span:nth-child(3) {
-    width: 180px; height: 180px;
-    top: 70%; left: -180px;
-    animation-duration: 20s;
-}
-.smoke span:nth-child(4) {
-    width: 280px; height: 280px;
-    top: 35%; left: -280px;
-    animation-duration: 22s;
-}
-.smoke span:nth-child(5) {
-    width: 200px; height: 200px;
-    top: 10%; left: -200px;
-    animation-duration: 19s;
-}
-
-@keyframes moveSmoke {
-    0% { transform: translateX(0); opacity: 0; }
-    10% { opacity: 0.6; }
-    90% { opacity: 0.6; }
-    100% { transform: translateX(120vw); opacity: 0; }
-}
-
-/* ========================= */
-/* 🇨🇿 🇬🇧 FLAGS */
-/* ========================= */
-
-.lang-switch {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 5;
-    display: flex;
-    gap: 10px;
-}
-
-.flag {
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 4px;
-}
-
-.flag:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px white;
-}
-
-/* ========================= */
-/* 📩 TELEGRAM */
-/* ========================= */
-
-.telegram-wrapper {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 6;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.telegram-icon {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
-
-/* TEXT */
-.telegram-text {
-    font-family: "Oswald", sans-serif;
-    font-size: 14px;
-    color: white;
-}
-
-/* puls */
-.telegram-wrapper:hover .telegram-icon {
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.15); }
-    100% { transform: scale(1); }
-}
-
-/* ========================= */
-/* 📜 SCROLL PAGE */
+/* SECTIONS */
 /* ========================= */
 
 .scroll-container {
     width: 100%;
 }
 
-/* sekce */
 .section {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* 🔥 vertical center */
+    align-items: center;       /* 🔥 horizontal center */
+
+    text-align: center;
+    padding: 20px;
+
     position: relative;
-    z-index: 3; /* 🔥 tohle je klíč */
+    z-index: 3;
 }
 
-/* NADPIS */
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
 .title {
     font-family: "Oswald", sans-serif;
-    font-size: 56px;
+    font-size: 64px;
     letter-spacing: 4px;
     margin-bottom: 20px;
 }
 
-/* TEXT */
 .text {
     font-family: "Oswald", sans-serif;
     font-size: 22px;
-    max-width: 700px;
-
-    line-height: 1.7;
-    opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.6;
+    opacity: 0.8;
 }
 
-.text {
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    max-width: 600px;
-    margin-top: 20px;
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.shadow__btn {
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* BLUE */
+.blue {
+    background: rgb(0,140,255);
+}
+.blue:hover {
+    transform: scale(1.1);
+}
+
+/* RED */
+.red {
+    background: rgb(255,0,80);
+}
+.red:hover {
+    transform: scale(1.1);
+}
+
+/* ========================= */
+/* TELEGRAM */
+/* ========================= */
+
+.telegram-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.telegram-icon {
+    width: 40px;
+}
+
+.telegram-text {
+    font-family: "Oswald";
+}
+
+/* ========================= */
+/* FLAGS */
+/* ========================= */
+
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.flag {
+    width: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.flag:hover {
+    transform: scale(1.2);
+}
+
+/* ========================= */
+/* SMOKE */
+/* ========================= */
+
+.smoke {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.smoke span {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(200,200,200,0.2);
+    border-radius: 50%;
+    filter: blur(80px);
+
+    animation: smokeMove 20s linear infinite;
+}
+
+@keyframes smokeMove {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(120vw);
+    }
 }
