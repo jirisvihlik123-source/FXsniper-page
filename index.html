@@ -2,13 +2,13 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Start</title>
+    <title>FXsniper</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="scroll-page">
+<body>
 
     <!-- 🇨🇿 🇬🇧 -->
     <div class="lang-switch">
@@ -17,11 +17,9 @@
     </div>
 
     <!-- TELEGRAM -->
-    <div class="telegram-wrapper">
-        <a href="https://t.me/+KAlz7OTd-_kyNzk0" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
-        </a>
-        <span class="telegram-text" data-lang="join">PŘIDEJ SE</span>
+    <div class="telegram-wrapper" onclick="goTelegram()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
+        <span class="telegram-text">PŘIDEJ SE</span>
     </div>
 
     <!-- SMOKE -->
@@ -29,32 +27,30 @@
         <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <!-- SCROLL CONTENT -->
+    <!-- SNAP SCROLL -->
     <div class="scroll-container">
 
         <section class="section">
-            <h1 class="title">SNIPER BOT</h1>
-            <p class="text">
-                Automatizovaný trading systém zaměřený na přesnost a konzistenci.
-            </p>
+            <h1 class="title">FXSNIPER</h1>
+            <p class="text">Automatický Forex bot analyzující trh v reálném čase.</p>
         </section>
 
         <section class="section">
             <h1 class="title">PRECISION</h1>
-            <p class="text">
-                Každý trade je filtrován pomocí AI a ADX analýzy.
-            </p>
+            <p class="text">Pouze kvalitní vstupy. Žádné zbytečné trady.</p>
         </section>
 
         <section class="section">
             <h1 class="title">PERFORMANCE</h1>
-            <p class="text">
-                Sleduj statistiky, winrate a optimalizuj svůj risk management.
-            </p>
+            <p class="text">Statistiky, winrate a kontrolovaný risk management.</p>
         </section>
 
         <section class="section">
-            <button class="shadow__btn blue" onclick="goBack()" data-lang="back">Zpět</button>
+            <h1 class="title">JOIN FXSNIPER</h1>
+
+            <button class="shadow__btn blue" onclick="goTelegram()">
+                Připoj se
+            </button>
         </section>
 
     </div>
@@ -62,3 +58,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
