@@ -44,3 +44,11 @@ function goAbout() {
 function goBack() {
     window.location.href = "index.html";
 }
+
+function goTelegram() {
+    window.open("https://t.me/+KAlz7OTd-_kyNzk0", "_blank");
+}
+
+function goAbout() {
+    window.location.href = "pribeh.html";
+}
