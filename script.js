@@ -19,10 +19,10 @@ const translations = {
         desc: "Automated Forex bot analyzing the market in real time.",
 
         precision: "PRECISION",
-        precisionText: "Only high-quality entries. No unnecessary trades.",
+        precisionText: "Only high-quality entries.",
 
         performance: "PERFORMANCE",
-        performanceText: "Track statistics, winrate and optimize risk management.",
+        performanceText: "Track statistics and performance.",
 
         welcome: "Welcome to FXsniper",
         startBtn: "Start",
@@ -30,7 +30,6 @@ const translations = {
     }
 };
 
-// změna jazyka
 function setLang(lang) {
     localStorage.setItem("lang", lang);
 
@@ -42,18 +41,15 @@ function setLang(lang) {
     });
 }
 
-// načtení při startu
-window.onload = () => {
+window.onload = function () {
     const savedLang = localStorage.getItem("lang") || "cz";
     setLang(savedLang);
 };
 
-// navigace
 function goStart() {
     window.location.href = "start.html";
 }
 
-// telegram
 function goTelegram() {
     window.open("https://t.me/+KAlz7OTd-_kyNzk0", "_blank");
 }
