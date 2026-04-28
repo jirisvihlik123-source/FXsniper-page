@@ -1,54 +1,59 @@
 const translations = {
     cz: {
-        title: "Vítej na naší stránce",
-        btn1: "Start",
-        btn2: "O nás",
-        join: "PŘIDEJ SE",
-        back: "Zpět",
-        startText: "Brzy tu něco bude...",
-        aboutText: "Brzy tu něco bude..."
+        main: "FXSNIPER",
+        desc: "Automatický Forex bot analyzující trh v reálném čase.",
+
+        precision: "PRECISION",
+        precisionText: "Pouze kvalitní vstupy. Žádné zbytečné trady.",
+
+        performance: "PERFORMANCE",
+        performanceText: "Statistiky, winrate a kontrolovaný risk management.",
+
+        welcome: "Vítejte v FXsniper",
+        startBtn: "Start",
+        joinTop: "PŘIDEJ SE"
     },
+
     en: {
-        title: "Welcome to our page",
-        btn1: "Start",
-        btn2: "About Us",
-        join: "JOIN US",
-        back: "Back",
-        startText: "Something will be here soon...",
-        aboutText: "Something will be here soon..."
+        main: "FXSNIPER",
+        desc: "Automated Forex bot analyzing the market in real time.",
+
+        precision: "PRECISION",
+        precisionText: "Only high-quality entries. No unnecessary trades.",
+
+        performance: "PERFORMANCE",
+        performanceText: "Track statistics, winrate and optimize risk management.",
+
+        welcome: "Welcome to FXsniper",
+        startBtn: "Start",
+        joinTop: "JOIN"
     }
 };
 
+// změna jazyka
 function setLang(lang) {
     localStorage.setItem("lang", lang);
 
     document.querySelectorAll("[data-lang]").forEach(el => {
         const key = el.getAttribute("data-lang");
-        el.innerText = translations[lang][key];
+        if (translations[lang][key]) {
+            el.innerText = translations[lang][key];
+        }
     });
 }
 
+// načtení při startu
 window.onload = () => {
-    const lang = localStorage.getItem("lang") || "cz";
-    setLang(lang);
+    const savedLang = localStorage.getItem("lang") || "cz";
+    setLang(savedLang);
 };
 
+// navigace
 function goStart() {
     window.location.href = "start.html";
 }
 
-function goAbout() {
-    window.location.href = "pribeh.html";
-}
-
-function goBack() {
-    window.location.href = "index.html";
-}
-
+// telegram
 function goTelegram() {
     window.open("https://t.me/+KAlz7OTd-_kyNzk0", "_blank");
-}
-
-function goAbout() {
-    window.location.href = "pribeh.html";
 }
