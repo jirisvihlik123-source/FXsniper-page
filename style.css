@@ -171,15 +171,15 @@ html {
 }
 
 /* ========================= */
-/* RIGHT ALIGN (TEAM PAGE) */
+/* LEFT ALIGN (TEAM PAGE) */
 /* ========================= */
 
 .section.right {
-    align-items: flex-end;
+    align-items: flex-start;   /* 👈 doleva */
     text-align: left;
 
-    padding-left: 5vw;
+    padding-left: 6vw;         /* 👈 odsazení od levého okraje */
+    padding-top: 15vh;         /* 👈 posun nahoru */
 
-    justify-content: flex-start; /* 👈 POSUNE NAHORU */
-    padding-top: 20vh;           /* 👈 doladění výšky */
+    justify-content: flex-start;
 }
