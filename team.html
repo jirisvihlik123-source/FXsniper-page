@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>FXsniper - Tým</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="bg-image"></div>
+
+    <!-- 🇨🇿 🇬🇧 -->
+    <div class="lang-switch">
+        <img src="cz.png" class="flag" onclick="setLang('cz')">
+        <img src="uk.png" class="flag" onclick="setLang('en')">
+    </div>
+
+    <!-- TELEGRAM -->
+    <div class="telegram-wrapper" onclick="goTelegram()">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
+        <span class="telegram-text" data-lang="joinTop">PŘIDEJ SE</span>
+    </div>
+
+    <!-- SMOKE -->
+    <div class="smoke">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- SCROLL -->
+    <div class="scroll-container">
+
+        <!-- BLOK 1 -->
+        <section class="section right">
+            <h1 class="title" data-lang="t1_title">NADPIS</h1>
+            <p class="text" data-lang="t1_text">
+                Sem dáš text o týmu...
+            </p>
+        </section>
+
+        <!-- BLOK 2 -->
+        <section class="section right">
+            <p class="text" data-lang="t2_text">
+                Další odstavec...
+            </p>
+        </section>
+
+        <!-- BLOK 3 -->
+        <section class="section right">
+            <p class="text" data-lang="t3_text">
+                Další odstavec...
+            </p>
+        </section>
+
+        <!-- POSLEDNÍ BLOK -->
+        <section class="section right">
+            <div class="buttons">
+                <button class="shadow__btn blue" onclick="goStart()" data-lang="backBtn">
+                    Zpět
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
