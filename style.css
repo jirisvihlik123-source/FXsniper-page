@@ -176,9 +176,9 @@ html {
 
 .section.right {
     align-items: flex-end;
-    text-align: right;
+    text-align: left;
 
-    padding-right: 5vw;
+    padding-left: 5vw;
 
     justify-content: flex-start; /* 👈 POSUNE NAHORU */
     padding-top: 20vh;           /* 👈 doladění výšky */
