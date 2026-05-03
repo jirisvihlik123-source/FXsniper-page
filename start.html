@@ -2,13 +2,19 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>FXsniper</title>
+    <title>FXsniper - Start</title>
 
+    <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLE -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- 🔥 BACKGROUND -->
+    <div class="bg-image"></div>
 
     <!-- 🇨🇿 🇬🇧 -->
     <div class="lang-switch">
@@ -16,45 +22,57 @@
         <img src="uk.png" class="flag" onclick="setLang('en')">
     </div>
 
-    <!-- TELEGRAM -->
+    <!-- 📩 TELEGRAM -->
     <div class="telegram-wrapper" onclick="goTelegram()">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
-        <span class="telegram-text">PŘIDEJ SE</span>
+        <span class="telegram-text" data-lang="joinTop">PŘIDEJ SE</span>
     </div>
 
-    <!-- SMOKE -->
+    <!-- 💨 SMOKE -->
     <div class="smoke">
         <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <!-- SNAP SCROLL -->
+    <!-- 🔽 SCROLL -->
     <div class="scroll-container">
 
+        <!-- 🔥 BLOK 1 -->
         <section class="section">
-            <h1 class="title">FXSNIPER</h1>
-            <p class="text">Automatický Forex bot analyzující trh v reálném čase.</p>
+            <h1 class="title" data-lang="s1_title">NADPIS</h1>
+            <p class="text" data-lang="s1_text">
+                Text sem vložíš později...
+            </p>
         </section>
 
+        <!-- 🔥 BLOK 2 -->
         <section class="section">
-            <h1 class="title">PRECISION</h1>
-            <p class="text">Pouze kvalitní vstupy. Žádné zbytečné trady.</p>
+            <h1 class="title" data-lang="s2_title">NADPIS</h1>
+            <p class="text" data-lang="s2_text">
+                Další text...
+            </p>
         </section>
 
+        <!-- 🔥 BLOK 3 -->
         <section class="section">
-            <h1 class="title">PERFORMANCE</h1>
-            <p class="text">Statistiky, winrate a kontrolovaný risk management.</p>
+            <h1 class="title" data-lang="s3_title">NADPIS</h1>
+            <p class="text" data-lang="s3_text">
+                Další text...
+            </p>
         </section>
 
+        <!-- 🔥 POSLEDNÍ BLOK -->
         <section class="section">
-            <h1 class="title">JOIN FXSNIPER</h1>
+            <h1 class="title" data-lang="s4_title">FXSNIPER</h1>
 
-            <button class="shadow__btn blue" onclick="goTelegram()">
+            <button class="shadow__btn blue" onclick="goTelegram()" data-lang="joinBtn">
                 Připoj se
             </button>
         </section>
 
     </div>
 
+    <!-- SCRIPT -->
     <script src="script.js"></script>
+
 </body>
 </html>
