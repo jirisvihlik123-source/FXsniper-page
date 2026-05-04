@@ -74,7 +74,6 @@ html {
     transform: scale(1.1);
 }
 
-/* SOCIAL */
 .social-wrapper {
     position: fixed;
     top: 20px;
@@ -82,8 +81,9 @@ html {
 
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-start; /* 👈 zajistí stejnou osu */
 
+    gap: 12px;
     z-index: 10;
 }
 
@@ -109,7 +109,7 @@ html {
 }
 
 .instagram-icon {
-    width: 38px;
+    width: 45px; /* 👈 stejná velikost jako telegram */
     border-radius: 50%;
 }
 
