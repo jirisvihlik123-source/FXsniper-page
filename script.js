@@ -114,3 +114,7 @@ function goTeam() {
 function goRequirements() {
     window.location.href = "requirements.html";
 }
+
+function goInstagram() {
+    window.open("https://instagram.com/tvoje_jmeno", "_blank");
+}
