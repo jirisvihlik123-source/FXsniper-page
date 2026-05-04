@@ -116,5 +116,5 @@ function goRequirements() {
 }
 
 function goInstagram() {
-    window.open("https://instagram.com/tvoje_jmeno", "_blank");
+    window.open("https://www.instagram.com/_fxsniper/", "_blank");
 }
