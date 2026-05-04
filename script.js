@@ -22,9 +22,21 @@ const translations = {
 
         s3_text: "Každý signál obsahuje jasně definovaný stop-loss a take-profit.",
 
-        // BUTTONS
+        // BUTTONS (START)
         teamBtn: "O týmu",
-        reqBtn: "Požadavky"
+        reqBtn: "Požadavky",
+
+        // TEAM PAGE
+        t1_title: "Náš příběh",
+        t1_text: "Každý člověk chce být bohatý a finančně zabezpečený, ale pro většinu lidí se to zdá těžké nebo nedosažitelné.",
+
+        t2_text: "Rozhodli jsme se, že když už se delší dobu zajímáme o trading a vše kolem něj, vytvoříme software pro každého – vlastní cestou, bez podvodů, protože víme, kolik jich dnes existuje.",
+
+        t3_text: "Spojení nás tří mladých kluků nebylo těžké, ale museli jsme si k sobě najít cestu. Každý z nás má jiný pohled na svět a stále se navzájem posouváme dál.",
+
+        t4_text: "Naším hlavním cílem je pomoci našim klientům a zároveň se sami stát úspěšnými a finančně nezávislými. Proto jsme vytvořili tento projekt – pro každého.",
+
+        backBtn: "Zpět"
     },
 
     en: {
@@ -50,9 +62,21 @@ const translations = {
 
         s3_text: "Each signal includes clearly defined stop-loss and take-profit levels.",
 
-        // BUTTONS
+        // BUTTONS (START)
         teamBtn: "About the Team",
-        reqBtn: "Requirements"
+        reqBtn: "Requirements",
+
+        // TEAM PAGE
+        t1_title: "Our Story",
+        t1_text: "Everyone wants to be wealthy and financially secure, but for most people it feels difficult or unreachable.",
+
+        t2_text: "Since we have been interested in trading and everything around it for a long time, we decided to create software for everyone – in our own way, without scams, because we know how many of them exist today.",
+
+        t3_text: "Bringing the three of us together wasn’t difficult, but we had to find our path. Each of us has a different perspective on life, and we continue to push each other forward.",
+
+        t4_text: "Our main goal is to help our clients while also becoming successful and financially independent ourselves. That’s why we created this project – for everyone.",
+
+        backBtn: "Back"
     }
 };
 
