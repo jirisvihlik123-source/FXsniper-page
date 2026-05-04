@@ -61,12 +61,22 @@ html {
 
 /* BUTTON */
 .shadow__btn {
-    padding: 15px 30px;
+    padding: 18px 40px;
     border: none;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
+
+    font-family: "Oswald";
+    font-size: 18px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
     cursor: pointer;
     background: rgb(0,140,255);
+
+    box-shadow: 0 0 15px rgba(0,140,255,0.5); /* 👈 glow */
+
     transition: 0.3s;
 }
 
