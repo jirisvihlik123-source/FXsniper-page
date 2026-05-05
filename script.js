@@ -66,15 +66,13 @@ const translations = {
 
         // TEAM PAGE
         t1_title: "Our Story",
-        t1_text: "Everyone wants to be wealthy and financially secure, but for most people it feels difficult or unreachable.",
+        t1_text: "We understand that today, everyone’s goal is to become successful and financially secure, which can often seem difficult or unrealistic. Since we have been interested in trading and software development for a long time, we decided to create our own product – in our own way, honestly and without scams, because we are aware of how many of them exist in the world. Bringing the three of us together wasn’t difficult, but we still had a lot to learn. As we genuinely enjoy building this product, we started discussing our personal goals, which led us to an agreement, connection, and collaboration.",
 
-        t2_text: "Since we have been interested in trading and everything around it for a long time, we decided to create software for everyone – in our own way, without scams, because we know how many of them exist today.",
+        t2_text: "The beginning of our journey started with an idea from one of us. It all began during the second year of high school. Each of us took on a specific role, and step by step we worked towards our first real result, which we later traded on the MetaTrader platform. However, it doesn’t end there, just like anything you try to build. We continuously work on improving our product based on honesty, efficiency, and long-term sustainability.",
 
-        t3_text: "Bringing the three of us together wasn’t difficult, but we had to find our path. Each of us has a different perspective on life, and we continue to push each other forward.",
+        t3_text: "Our main goal is to help our clients, while also becoming successful ourselves—primarily by helping others. This is how this project was created: to help us reach our goals and build a strong community of people who are satisfied with our product, while also creating something new that is rarely seen in today’s world.",
 
-        t4_text: "Our main goal is to help our clients while also becoming successful and financially independent ourselves. That’s why we created this project – for everyone.",
-
-        backBtn: "Back"
+        backBtn: "Back",
     }
 };
 
