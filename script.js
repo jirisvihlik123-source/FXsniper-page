@@ -28,15 +28,13 @@ const translations = {
 
         // TEAM PAGE
         t1_title: "Náš příběh",
-        t1_text: "Každý člověk chce být bohatý a finančně zabezpečený, ale pro většinu lidí se to zdá těžké nebo nedosažitelné.",
+        t1_text: "Tím, že víme, že dnes je cíl každého člověka být úspěšný a zabezpečený, což se může zdát těžké nebo nereálné, rozhodli jsme se, že když už se delší dobu zajímáme o trading a tvorbu softwaru, vytvoříme si vlastní produkt – ale svojí cestou, poctivě a bez podvodů, protože jsme si vědomi, kolik takových podvodů na světě je. Spojení nás tří mladých kluků nebylo těžké, ale potřebovali jsme se ještě sami něco přiučit. Jelikož nás tvorba tohoto produktu opravdu baví, začali jsme se bavit o všem, co je naším osobním cílem, a to nás dovedlo k domluvě, spojení a spolupráci.",
 
-        t2_text: "Rozhodli jsme se, že když už se delší dobu zajímáme o trading a vše kolem něj, vytvoříme software pro každého – vlastní cestou, bez podvodů, protože víme, kolik jich dnes existuje.",
+        t2_text: "Začátkem naší cesty byl nápad jednoho z nás. Vše to začalo v druhém ročníku střední školy. Každý z nás se uchopil nějakého úkolu a ty jsme postupně plnili, až jsme dospěli k prvnímu reálnému výsledku, který jsme následně obchodovali na platformě MetaTrader. Bohužel to tímto ale nekončí, jako ostatně u všeho co se snažíte vybudovat. Stále se snažíme náš produkt vylepšovat, a to na základě poctivosti, efektivity a dlouhodobé udržitelnosti.",
 
-        t3_text: "Spojení nás tří mladých kluků nebylo těžké, ale museli jsme si k sobě najít cestu. Každý z nás má jiný pohled na svět a stále se navzájem posouváme dál.",
+        t3_text: "Naším hlavním cílem je především pomoci našim klientům, ale také se sami stát úspěšnými, hlavně tedy díky pomoci jiným lidem. Díky tomu vznikl tento projekt, který nám pomůže dostat se tam, kam chceme, a budovat silnou komunitu lidí, kteří budou spokojení s naším produktem, ale také budovat něco nového, co se na světě moc nevidí.",
 
-        t4_text: "Naším hlavním cílem je pomoci našim klientům a zároveň se sami stát úspěšnými a finančně nezávislými. Proto jsme vytvořili tento projekt – pro každého.",
-
-        backBtn: "Zpět"
+        backBtn: "Zpět",
     },
 
     en: {
