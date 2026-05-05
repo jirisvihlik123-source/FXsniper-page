@@ -25,13 +25,13 @@ html {
 
 .scroll-container {
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     scroll-snap-type: y mandatory;
 }
 
 /* SECTION */
 .section {
-    height: 100vh;
+    min-height: 100vh; /* 🔥 FIX místo height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,8 +75,7 @@ html {
     cursor: pointer;
     background: rgb(0,140,255);
 
-    box-shadow: 0 0 15px rgba(0,140,255,0.5); /* 👈 glow */
-
+    box-shadow: 0 0 15px rgba(0,140,255,0.5);
     transition: 0.3s;
 }
 
@@ -84,6 +83,7 @@ html {
     transform: scale(1.1);
 }
 
+/* SOCIAL WRAPPER */
 .social-wrapper {
     position: fixed;
     top: 20px;
@@ -91,7 +91,7 @@ html {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 👈 zajistí stejnou osu */
+    align-items: flex-start;
 
     gap: 12px;
     z-index: 10;
@@ -105,8 +105,12 @@ html {
     cursor: pointer;
 }
 
-.telegram-icon {
+/* 🔥 sjednocené ikony */
+.telegram-icon,
+.instagram-icon {
     width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
 .telegram-text {
@@ -116,11 +120,6 @@ html {
 /* INSTAGRAM */
 .instagram-wrapper {
     cursor: pointer;
-}
-
-.instagram-icon {
-    width: 45px; /* 👈 stejná velikost jako telegram */
-    border-radius: 50%;
 }
 
 /* HOVER */
@@ -177,14 +176,31 @@ html {
 }
 
 /* ========================= */
-/* 📱 MOBILE OPTIMIZATION */
+/* 📱 MOBILE FIX */
 /* ========================= */
 
 @media (max-width: 768px) {
 
-    /* TEXT */
+    .scroll-container {
+        height: 100vh;
+        overflow-y: auto;
+        scroll-snap-type: none; /* 🔥 vypne buglej snap */
+    }
+
+    .section {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 18vh;
+        justify-content: flex-start;
+    }
+
+    .section.right {
+        padding-left: 6vw;
+        padding-top: 16vh;
+    }
+
     .title {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .text {
@@ -192,45 +208,31 @@ html {
         max-width: 90%;
     }
 
-    /* SECTION SPACING */
-    .section {
-        padding: 20px;
-        justify-content: flex-start;
-        padding-top: 20vh;
-    }
-
-    /* LEFT ALIGN (TEAM PAGE) */
-    .section.right {
-        padding-left: 8vw;
-        padding-top: 18vh;
-    }
-
-    /* BUTTONS */
-    .buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-
     .shadow__btn {
         width: 80%;
         font-size: 14px;
     }
 
-    /* TELEGRAM */
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* menší UI */
+    .telegram-icon,
+    .instagram-icon {
+        width: 30px;
+        height: 30px;
+    }
+
     .telegram-text {
         font-size: 14px;
     }
 
-    .telegram-icon {
-        width: 30px;
-    }
-
-    /* FLAGS */
     .flag {
         width: 30px;
     }
 
-    /* BACKGROUND */
     .bg-image {
         background-size: cover;
     }
