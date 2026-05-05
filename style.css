@@ -175,3 +175,63 @@ html {
     padding-top: 15vh;
     justify-content: flex-start;
 }
+
+/* ========================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* TEXT */
+    .title {
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    /* SECTION SPACING */
+    .section {
+        padding: 20px;
+        justify-content: flex-start;
+        padding-top: 20vh;
+    }
+
+    /* LEFT ALIGN (TEAM PAGE) */
+    .section.right {
+        padding-left: 8vw;
+        padding-top: 18vh;
+    }
+
+    /* BUTTONS */
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .shadow__btn {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    /* TELEGRAM */
+    .telegram-text {
+        font-size: 14px;
+    }
+
+    .telegram-icon {
+        width: 30px;
+    }
+
+    /* FLAGS */
+    .flag {
+        width: 30px;
+    }
+
+    /* BACKGROUND */
+    .bg-image {
+        background-size: cover;
+    }
+}
