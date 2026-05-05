@@ -76,7 +76,13 @@ html {
     background: rgb(0,140,255);
 
     box-shadow: 0 0 15px rgba(0,140,255,0.5);
+
     transition: 0.3s;
+
+    display: flex;              /* 🔥 důležité */
+    justify-content: center;    /* 🔥 horizontální střed */
+    align-items: center;        /* 🔥 vertikální střed */
+    text-align: center;         /* 🔥 fallback */
 }
 
 .shadow__btn:hover {
