@@ -243,3 +243,8 @@ html {
         background-size: cover;
     }
 }
+
+.buttons {
+    display: flex;
+    gap: 20px; /* 🔥 mezera mezi tlačítky */
+}
