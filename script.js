@@ -35,6 +35,10 @@ const translations = {
         t3_text: "Naším hlavním cílem je především pomoci našim klientům, ale také se sami stát úspěšnými, hlavně tedy díky pomoci jiným lidem. Díky tomu vznikl tento projekt, který nám pomůže dostat se tam, kam chceme, a budovat silnou komunitu lidí, kteří budou spokojení s naším produktem, ale také budovat něco nového, co se na světě moc nevidí.",
 
         backBtn: "Zpět",
+
+        homeBtn: "Domů",
+        teamBtn: "O nás",
+        reqBtn: "Požadavky",
     },
 
     en: {
@@ -73,6 +77,10 @@ const translations = {
         t3_text: "Our main goal is to help our clients, while also becoming successful ourselves—primarily by helping others. This is how this project was created: to help us reach our goals and build a strong community of people who are satisfied with our product, while also creating something new that is rarely seen in today’s world.",
 
         backBtn: "Back",
+
+        homeBtn: "Home",
+        teamBtn: "About",
+        reqBtn: "Requirements",
     }
 };
 
