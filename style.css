@@ -275,6 +275,15 @@ html {
     .bg-image {
         background-size: cover;
     }
+
+    .top-nav {
+    gap: 20px;
+    top: 22px;
+}
+
+.nav-btn {
+    font-size: 15px;
+}
 }
 
 .buttons {
