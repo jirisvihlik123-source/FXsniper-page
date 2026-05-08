@@ -114,3 +114,7 @@ function goRequirements() {
 function goInstagram() {
     window.open("https://www.instagram.com/_fxsniper/", "_blank");
 }
+
+function goHome() {
+    window.location.href = "start.html";
+}
