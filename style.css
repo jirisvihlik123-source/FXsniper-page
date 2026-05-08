@@ -226,13 +226,6 @@ html {
         scroll-snap-type: none; /* 🔥 vypne buglej snap */
     }
 
-    .section {
-        min-height: 100vh;
-        height: auto;
-        padding-top: 18vh;
-        justify-content: flex-start;
-    }
-
     .section.right {
         padding-left: 6vw;
         padding-top: 16vh;
@@ -291,9 +284,11 @@ html {
     gap: 20px; /* 🔥 mezera mezi tlačítky */
 }
 
-    .hero-section {
-        justify-content: center !important;
-        padding-top: 0 !important;
-    }
+.hero-section {
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    gap: 25px;
+}
 
 }
