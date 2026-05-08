@@ -290,3 +290,10 @@ html {
     display: flex;
     gap: 20px; /* 🔥 mezera mezi tlačítky */
 }
+
+    .hero-section {
+        justify-content: center !important;
+        padding-top: 0 !important;
+    }
+
+}
