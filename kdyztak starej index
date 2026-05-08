@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>FXsniper</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="bg-image"></div>
+
+    <!-- FLAGS -->
+    <div class="lang-switch">
+        <img src="cz.png" class="flag" onclick="setLang('cz')">
+        <img src="uk.png" class="flag" onclick="setLang('en')">
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="social-wrapper">
+
+        <!-- TELEGRAM -->
+        <div class="telegram-wrapper" onclick="goTelegram()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" class="telegram-icon">
+            <span class="telegram-text" data-lang="joinTop">PŘIDEJ SE</span>
+        </div>
+
+        <!-- INSTAGRAM -->
+        <div class="instagram-wrapper" onclick="goInstagram()">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="instagram-icon">
+        </div>
+
+    </div>
+
+    <!-- SMOKE -->
+    <div class="smoke">
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- SCROLL -->
+<div class="scroll-container">
+
+    <!-- 🔥 1. SCREEN (OPRAVENÝ) -->
+    <section class="section hero-section"> 
+        <h1 class="title" data-lang="welcome">Vítejte v FXsniper</h1>
+
+        <button class="shadow__btn blue" onclick="goStart()" data-lang="startBtn">
+            Start
+        </button>
+    </section>
+
+    <!-- 2 -->
+    <section class="section">
+        <h1 class="title" data-lang="precision"></h1>
+        <p class="text" data-lang="precisionText"></p>
+    </section>
+
+    <!-- 3 -->
+    <section class="section">
+        <h1 class="title" data-lang="performance"></h1>
+        <p class="text" data-lang="performanceText"></p>
+    </section>
+
+    <!-- 4 -->
+    <section class="section">
+        <button class="shadow__btn blue" onclick="goStart()" data-lang="startBtn"></button>
+    </section>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
